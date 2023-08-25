@@ -1,0 +1,247 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+}
+.nav-list li{
+   justify-content: space-between;
+   list-style: none;
+   padding: 26px 30px;
+}
+.nav-list li a:hover{
+    color: red
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white
+}
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background:rgba(0,0,0,0.7) url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;/* ye kis tarah se render honge*/
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    margin: 10px 10px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid blanchedalmond;
+    border-radius: 100px;
+} 
+.text-big{
+    font-size: 38px;
+    margin: 8px 10px;
+}
+.text-small{
+    margin: 10px 12px;
+    font-size: 20px;
+}
+.btn{
+    padding: 10px;
+    margin: 11px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.secRight{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+.imgFluid{
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.contact{
+    background-color: #f6f5f4;
+    height: 84vh;
+}
+.text-center{
+    text-align: center;
+    font-size: 55px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 42px auto;
+}
+.form-input{
+    margin: 30px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    margin: auto;
+    padding: 10px;
+    font-size: 25px;
+}
+.submit{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+#tem{
+    padding: 20px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+#home{
+    height: 100vh;
+}
+#abou{
+    height: 60vh;
+}
+#servi{
+    height: 60vh;
+}
+@media only screen and (max-width:1000px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .secondHalf img{
+        width: 150px;
+        height: 150px;
+    }
+    #search{
+        width: 40%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 60px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    #abou{
+        flex-direction: column-reverse;
+    }
+    #servi{
+        flex-direction: column;
+    }
+    .imgFluid{
+        height: 150px;
+        width: 150px;
+        border-radius: 50px;
+        margin-top: 30px;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    button{
+        text-align: center;
+    }
+    p{
+        padding: 0px;
+    }
+    #home{
+        height: 100vh;
+    }
+    #abou{
+        height: 100vh;
+    }
+    #servi{
+        height: 100vh;
+    }
+    
+}
